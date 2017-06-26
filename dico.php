@@ -23,7 +23,17 @@ foreach ($dico as $result2) {
 		array_push($word_w,$result2);
 	}
 }
-echo count($word_w);
+echo count($word_w)." "."mots avec un w".'<br/>';
+
+//exercice4
+$word_q=array();
+foreach ($dico as $result3) {
+	if (substr($result3,-1)=="q") {
+		array_push($word_q, $result3);
+	}
+	
+}
+echo count ($word_q)." "."mots finissant par un q";
 
 
 
